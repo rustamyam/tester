@@ -14,8 +14,8 @@ pipeline {
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
-                dir ('docker/rustam') {
-                	sh 'docker build -t yamlikhanov:3.3 .'
+                dir ('Docker/rustam') {
+                	sh 'docker build -t yamlikhanov:3.3 . '
                 }
             }
         }  
